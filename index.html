@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B站无水印视频下载介绍</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="preloader">
+        <img src="images/preloader.gif" alt="页面加载中">
+    </div>
+    <div class="container" style="display:none;">
+        <header>
+            <h1>如何下载B站无水印视频</h1>
+            <p>简单的步骤，帮助你下载B站无水印视频。</p>
+        </header>
+        <section id="video-comparison">
+            <h2>视频对比</h2>
+
+            <div class="video-group">
+                <h3>4K 视频对比</h3>
+                <div class="video-container">
+                    <div class="video">
+                        <h4>4K 有水印视频</h4>
+                        <video controls src="videos/4k_watermarked.mp4"></video>
+                    </div>
+                    <div class="video">
+                        <h4>4K 无水印视频</h4>
+                        <video controls src="videos/4k_no_watermark.mp4"></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-group">
+                <h3>1080P 视频对比</h3>
+                <div class="video-container">
+                    <div class="video">
+                        <h4>1080P 有水印视频</h4>
+                        <video controls src="videos/1080p_watermarked.mp4"></video>
+                    </div>
+                    <div class="video">
+                        <h4>1080P 无水印视频</h4>
+                        <video controls src="videos/1080p_no_watermark.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage">
+            <h2>使用方法</h2>
+            <ol>
+                <li>打开B站视频页面。</li>
+                <li>复制视频链接。</li>
+                <li>打开我们的工具网站，粘贴视频链接并点击下载按钮。</li>
+                <li>选择无水印下载选项，等待下载完成。</li>
+            </ol>
+        </section>
+
+        <section id="donation">
+            <h2>支持我们</h2>
+            <div class="donation-codes">
+                <div class="code">
+                    <h3>微信支付</h3>
+                    <img src="images/wechat_qr.png" alt="微信收款码">
+                </div>
+                <div class="code">
+                    <h3>支付宝支付</h3>
+                    <img src="images/alipay_qr.png" alt="支付宝收款码">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('preloader').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
